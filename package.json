@@ -27,11 +27,14 @@
     "test": "vitest",
     "type-check": "tsc --noEmit",
     "update:eslint-docs": "eslint-doc-generator",
-    "format": "prettier --ignore-path .gitignore --write **/*.{ts,md,js,json,yaml,yml}"
+    "format": "prettier --ignore-path .gitignore --write **/*.{ts,md,js,json,yaml,yml}",
+    "changeset:version": "changeset version && pnpm install --no-frozen-lockfile",
+    "changeset:publish": "pnpm run build && changeset publish"
   },
   "devDependencies": {
-    "@tsconfig/strictest": "^2.0.2",
+    "@changesets/cli": "^2.26.2",
     "@tsconfig/node16": "^16.1.1",
+    "@tsconfig/strictest": "^2.0.2",
     "@types/eslint": "^8.44.7",
     "@types/estree": "^1.0.5",
     "@types/node": "^20.9.0",

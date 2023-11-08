@@ -1,13 +1,12 @@
 jobs:
-  tsc:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/prepare
-      - run: pnpm run type-check
-      - run: pnpm run lint:eslint-docs
+      - run: pnpm run build
 
-name: Lint ESLint Docs
+name: Test
 
 on:
   pull_request: ~
