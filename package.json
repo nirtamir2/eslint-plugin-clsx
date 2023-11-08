@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-clsx",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Rules for using clean clsx in your project",
   "keywords": [
     "eslint",
