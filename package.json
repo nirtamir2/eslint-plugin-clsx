@@ -1,0 +1,57 @@
+{
+  "name": "eslint-plugin-clsx",
+  "version": "0.0.0",
+  "description": "Rules for using clean clsx in your project",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "clsx"
+  ],
+  "author": "Nir Tamir <nirtamir2@gmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/nirtamir2/eslint-plugin-package-clsx#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nirtamir2/eslint-plugin-package-clsx/issues"
+  },
+  "bugs": {
+    "url": "https://github.com/nirtamir2/eslint-plugin-package-clsx/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --fix \"src/**/*.{ts,tsx,js,jsx}\"",
+    "lint:eslint-docs": "pnpm run update:eslint-docs -- --check",
+    "lint:docs": "markdownlint \"**/*.md\"",
+    "test": "vitest",
+    "type-check": "tsc --noEmit",
+    "update:eslint-docs": "eslint-doc-generator",
+    "format": "prettier --ignore-path .gitignore --write **/*.{ts,md,js,json,yaml,yml}"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.2",
+    "@tsconfig/node16": "^16.1.1",
+    "@types/eslint": "^8.44.7",
+    "@types/estree": "^1.0.5",
+    "@types/node": "^20.9.0",
+    "console-fail-test": "^0.2.3",
+    "eslint": "^8.53.0",
+    "eslint-doc-generator": "^1.5.4",
+    "eslint-plugin-eslint-plugin": "^5.1.1",
+    "markdownlint-cli": "^0.37.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "eslint-config-nirtamir2": "^0.0.57"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0",
+    "jsonc-eslint-parser": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
