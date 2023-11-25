@@ -1,5 +1,5 @@
 ---
-"eslint-plugin-clsx": patch
+"eslint-plugin-default-import-name": patch
 ---
 
 initial release

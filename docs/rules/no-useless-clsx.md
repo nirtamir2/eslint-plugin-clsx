@@ -1,4 +1,4 @@
-# clsx/no-useless-clsx
+# clsx/default-import-name
 
 🔧 This rule is automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/latest/user-guide/command-line-interface#--fix).
 
@@ -10,6 +10,6 @@
 
 | Name                      |
 | :------------------------ |
-| `additionalFunctionNames` |
+| `addiotionalDefaultImportNames` |
 
 <!-- end auto-generated rule options list -->

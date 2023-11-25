@@ -1,8 +1,8 @@
-import noUselessClsx from "./rules/no-useless-clsx";
+import nounmatchedDefaultImportName from "./rules/default-import-name";
 
 // eslint-disable-next-line import/no-unused-modules
 export const rules = {
-  "no-useless-clsx": noUselessClsx,
+  "default-import-name": nounmatchedDefaultImportName,
 };
 
 // eslint-disable-next-line import/no-unused-modules

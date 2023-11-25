@@ -1,24 +1,24 @@
-# eslint-plugin-clsx
+# eslint-plugin-default-import-name
 
 Rules for consistent usage of `clsx` functions.
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org) >=8 and `eslint-plugin-clsx`:
+You'll first need to install [ESLint](http://eslint.org) >=8 and `eslint-plugin-default-import-name`:
 
 ```shell
-pnpm add -D eslint eslint-plugin-clsx
+pnpm add -D eslint eslint-plugin-default-import-name
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-clsx` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-default-import-name` globally.
 
 ## Usage
 
-Add an override to your ESLint configuration file that specifies this plugin, [`eslint-plugin-clsx`](https://github.com/nirtamir2/eslint-plugin-clsx) and its recommended rules for your `package.json` file:
+Add an override to your ESLint configuration file that specifies this plugin, [`eslint-plugin-default-import-name`](https://github.com/nirtamir2/eslint-plugin-default-import-name) and its recommended rules for your `package.json` file:
 
 ```js
 module.exports = {
-  extends: ["plugin:eslint-plugin-clsx/recommended"],
+  extends: ["plugin:eslint-plugin-default-import-name/recommended"],
 };
 ```
 
@@ -27,9 +27,9 @@ Or, individually configure the rules you want to use under the rules section.
 ```js
 module.exports = {
     {
-      plugins: ["clsx"],
+      plugins: ["default-import-name"],
       rules: {
-        "clsx/no-useless-clsx": "error",
+        "clsx/default-import-name": "error",
       },
   ],
 };
@@ -43,6 +43,6 @@ module.exports = {
 
 | Name                                             | Description                                      | 🔧 |
 | :----------------------------------------------- | :----------------------------------------------- | :- |
-| [no-useless-clsx](docs/rules/no-useless-clsx.md) | enforce use of "clsx" with dynamic data argument | 🔧 |
+| [default-import-name](docs/rules/default-import-name.md) | enforce use of "clsx" with dynamic data argument | 🔧 |
 
 <!-- end auto-generated rules list -->
